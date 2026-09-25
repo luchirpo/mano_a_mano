@@ -1,0 +1,208 @@
+/* RESET BÁSICO Y ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seccion {
+    padding: 60px 0;
+}
+
+.seccion-gris {
+    background-color: #f1f5f9;
+    padding: 60px 0;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 40px;
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 0;
+}
+
+.nav-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.nav-botones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primario {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primario:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secundario {
+    background-color: #1e40af;
+    color: #ffffff;
+    border: 1px solid #3b82f6;
+}
+
+.btn-secundario:hover {
+    background-color: #1e3a8a;
+}
+
+.btn-blanco {
+    background-color: #ffffff;
+    color: #2563eb;
+}
+
+.btn-blanco:hover {
+    background-color: #f8fafc;
+}
+
+.btn-link {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: #0f172a;
+}
+
+/* PORTADA (HERO) */
+.hero {
+    background-color: #2563eb;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #dbeafe;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-acciones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* TARJETAS DE CATEGORÍA */
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-categoria {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-categoria .icono {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tarjeta-categoria h3 {
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.tarjeta-categoria p {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* PASOS DE FUNCIONAMIENTO */
+.grid-pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.paso .numero-paso {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.paso h3 {
+    margin-bottom: 8px;
+}
+
+.paso p {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    padding: 25px 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}

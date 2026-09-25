@@ -9,7 +9,7 @@ class ServicioSolicitado extends Model
 {
     use HasFactory;
     
-    protected $table='servicios_solicitados';
+    protected $table='servicio_solicitados';
     
     protected $fillable = [
         'cliente_id',
